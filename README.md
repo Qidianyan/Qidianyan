@@ -21,7 +21,7 @@
 
 ## 联系我们
 
-- 商务合作：1634907980@qq.com
+- 商务合作：202342626@qq.com
 - GitHub：[@Qidianyan](https://github.com/Qidianyan)
 
 ---
@@ -35,4 +35,4 @@
 - Agent engineering on open-source harnesses (DeepSeek Harness, Claude Code)
 - Tooling: CLIs, skills, and plugins that make agents manageable
 
-📬 Business inquiries: 1634907980@qq.com
+📬 Business inquiries: 202342626@qq.com
