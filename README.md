@@ -1,7 +1,5 @@
 <p align="center"><img src="avatar.png" width="140" alt="Qidianyan Tech emblem" /></p>
 
-<p align="center"><img src="avatar.png" width="140" alt="Qidianyan Tech emblem" /></p>
-
 # 上海奇点砚科技有限公司
 
 ### Qidianyan Tech · Custom AI Agents for SMEs
