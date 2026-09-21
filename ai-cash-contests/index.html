@@ -6,23 +6,15 @@
 <title>国内外 AI / 创业现金赛清单 · 2026-09-21</title>
 <style>
   :root {
-    --bg: #0b1020;
-    --card: #141b2d;
-    --line: #243049;
-    --text: #e8eefc;
-    --muted: #9aa8c7;
-    --accent: #5b8cff;
-    --good: #3ecf8e;
-    --warn: #f0b429;
-    --bad: #ff6b7a;
+    --bg: #0b1020; --card: #141b2d; --line: #243049; --text: #e8eefc;
+    --muted: #9aa8c7; --accent: #5b8cff; --good: #3ecf8e; --warn: #f0b429; --bad: #ff6b7a; --new: #c084fc;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
     background: radial-gradient(1200px 600px at 10% -10%, #1a2744, transparent), var(--bg);
-    color: var(--text);
-    line-height: 1.55;
+    color: var(--text); line-height: 1.55;
   }
   .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 80px; }
   h1 { font-size: 1.65rem; margin: 0 0 8px; }
@@ -30,32 +22,24 @@
   h3 { font-size: 1rem; margin: 0 0 6px; }
   .sub { color: var(--muted); margin: 0 0 20px; font-size: 0.95rem; }
   .note {
-    background: #182236;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 14px 16px;
-    color: var(--muted);
-    font-size: 0.92rem;
+    background: #182236; border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 16px; color: var(--muted); font-size: 0.92rem;
   }
   .note strong { color: var(--warn); }
   .grid { display: grid; gap: 12px; }
   .card {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 14px 16px;
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 14px 16px;
   }
   .meta { color: var(--muted); font-size: 0.88rem; margin: 4px 0; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
   .tag {
-    font-size: 0.75rem;
-    padding: 2px 8px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    color: var(--muted);
+    font-size: 0.75rem; padding: 2px 8px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
   }
   .tag.cash { color: var(--good); border-color: #2a5a44; background: #123024; }
   .tag.urgent { color: var(--warn); border-color: #5a4820; background: #2a220f; }
+  .tag.new { color: var(--new); border-color: #4c2a6a; background: #241433; }
   .tag.skip { color: var(--bad); border-color: #5a2a32; background: #2a1218; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -64,26 +48,30 @@
   th { color: var(--muted); font-weight: 600; }
   .toc a { margin-right: 14px; display: inline-block; margin-bottom: 6px; }
   footer { margin-top: 40px; color: var(--muted); font-size: 0.85rem; }
+  ol li { margin: 6px 0; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>国内外 AI / 创业现金赛清单</h1>
-  <p class="sub">更新基准：2026-09-21（Asia/Shanghai）· 优先：线上 · 大陆可报 · 真现金（PayPal / Payoneer / 电汇）</p>
+  <p class="sub">更新：2026-09-21（Asia/Shanghai）第二版 · 含下午增量 · 优先线上 / 大陆可报 / 真现金</p>
 
   <div class="note">
-    <strong>使用说明：</strong>金额与截止日以各官方页为准，报名前再核一遍 Rules（国家排除、打款方式、是否需上架/到场）。
-    Web3 仅 USDC 场、Partner-only、纯 credits/纪念品场已降级或剔除。
+    <strong>使用说明：</strong>金额与截止日以各官方页为准，报名前再核 Rules（国家排除、打款、是否需上架/到场）。
+    标 <span class="tag new">NEW</span> 为相对首版的增量。Web3 仅 USDC、Partner-only、纯 credits 已降级或剔除。
   </div>
 
   <h2 id="toc">目录</h2>
   <p class="toc">
     <a href="#channels">每周入口</a>
     <a href="#urgent">本周最急</a>
+    <a href="#new-overseas">海外增量</a>
+    <a href="#new-china">国内增量</a>
     <a href="#overseas-oct">海外 10 月</a>
     <a href="#overseas-long">海外中长期</a>
-    <a href="#china">国内赛</a>
+    <a href="#china">国内（首版）</a>
     <a href="#startup">创业赛</a>
+    <a href="#plan">行动顺序</a>
     <a href="#skip">别报</a>
   </p>
 
@@ -95,180 +83,223 @@
     </div>
     <div class="card">
       <h3>国内</h3>
-      <div class="meta"><a href="https://tianchi.aliyun.com/competition/" target="_blank" rel="noopener">天池</a> · <a href="https://www.heywhale.com/home/competition" target="_blank" rel="noopener">和鲸</a> · <a href="https://www.cnmaker.org.cn/" target="_blank" rel="noopener">创客中国</a> · <a href="https://www.keceyun.com/" target="_blank" rel="noopener">科策云</a> · <a href="https://www.aibetas.com/competition-calendar" target="_blank" rel="noopener">AIBetas 日历</a></div>
+      <div class="meta"><a href="https://tianchi.aliyun.com/competition/" target="_blank" rel="noopener">天池</a> · <a href="https://www.heywhale.com/home/competition" target="_blank" rel="noopener">和鲸</a> · <a href="https://www.cnmaker.org.cn/" target="_blank" rel="noopener">创客中国</a> · <a href="https://www.aibetas.com/competition-calendar" target="_blank" rel="noopener">AIBetas 日历</a></div>
     </div>
   </div>
 
-  <h2 id="urgent">本周最急（海外线上现金）</h2>
+  <h2 id="urgent">本周最急</h2>
   <div class="grid">
     <div class="card">
-      <h3><a href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development" target="_blank" rel="noopener">Biohub · Cell Tracking During Development</a></h3>
-      <div class="meta">报名/组队约 <strong>2026-09-22</strong> · 最终提交约 <strong>2026-09-29</strong> 23:59 UTC</div>
-      <div class="meta">现金约 <strong>$60,000</strong> · 线上 Kaggle · 大陆通常可 · 打款常见 Payoneer</div>
-      <div class="tags"><span class="tag urgent">极急</span><span class="tag cash">真现金</span><span class="tag">CV / 3D</span></div>
+      <h3><a href="https://luma.com/convex-allgas-hackathon" target="_blank" rel="noopener">Convex All Gas Hackathon</a></h3>
+      <div class="meta">截止约 <strong>北京 2026-09-23 03:00</strong>（PT 9/22 12:00）· 真金 <strong>$16,500</strong></div>
+      <div class="meta">须 Convex 后端 + 公开 GitHub · 打款方式未核验 · 来不及就跳过</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag urgent">明天关</span><span class="tag cash">真现金</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development" target="_blank" rel="noopener">Biohub · Cell Tracking</a></h3>
+      <div class="meta">报名/组队约 <strong>9/22</strong> · 提交约 <strong>9/29</strong> · 现金约 <strong>$60,000</strong> · Payoneer</div>
+      <div class="tags"><span class="tag urgent">极急</span><span class="tag cash">真现金</span></div>
     </div>
     <div class="card">
       <h3><a href="https://www.kaggle.com/competitions/kaggriculture" target="_blank" rel="noopener">Kaggriculture</a></h3>
-      <div class="meta">报名约 <strong>2026-09-23</strong> · 最终提交 <strong>2026-09-30</strong></div>
-      <div class="meta">现金 <strong>$50,000</strong>（前 10 名各 $5k）· Payoneer</div>
+      <div class="meta">报名约 <strong>9/23</strong> · 提交 <strong>9/30</strong> · <strong>$50,000</strong></div>
       <div class="tags"><span class="tag urgent">极急</span><span class="tag cash">真现金</span></div>
     </div>
     <div class="card">
       <h3><a href="https://revenuecat-shipaton-2026.devpost.com/" target="_blank" rel="noopener">RevenueCat Shipaton 2026</a></h3>
-      <div class="meta">提交 <strong>2026-09-30 23:45 PDT</strong></div>
-      <div class="meta">官方现金约 <strong>$740,000+</strong> · 需窗口期内新上架 App + RevenueCat · 大陆/HK 未点名排除 · 电汇/电子 + W-8BEN</div>
+      <div class="meta">提交 <strong>9/30 23:45 PDT</strong> · 现金约 <strong>$740,000+</strong> · 须窗口期内新上架 App</div>
       <div class="tags"><span class="tag urgent">9/30</span><span class="tag cash">真现金</span><span class="tag">需上架</span></div>
     </div>
     <div class="card">
-      <h3><a href="https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon" target="_blank" rel="noopener">AssemblyAI Voice Agent</a></h3>
-      <div class="meta">至 <strong>2026-09-30</strong></div>
-      <div class="meta">真现金 <strong>$5,000</strong> + $5,000 credits（只算现金部分）· 全球线上 · 打款细节页上未写死</div>
-      <div class="tags"><span class="tag cash">半现金</span><span class="tag">Voice Agent</span></div>
+      <h3><a href="https://delincapital.com.cn/delin-cup.html" target="_blank" rel="noopener">德邻杯 · 2026 AI 创业大赛</a></h3>
+      <div class="meta">交 BP 至 <strong>9/30</strong> · 决赛深圳 10/15–16 · 冠军宣传 <strong>200 万现金</strong></div>
+      <div class="tags"><span class="tag urgent">9/30</span><span class="tag cash">真现金</span></div>
     </div>
     <div class="card">
-      <h3><a href="https://lablab.ai/ai-hackathons/ibm-bob-2-hackathon" target="_blank" rel="noopener">IBM Bob 2.0 Hackathon</a></h3>
-      <div class="meta"><strong>2026-09-25 ~ 09-27</strong>（约 48h）</div>
-      <div class="meta">奖池约 <strong>$10,000</strong> · 线上 · 打款方式未在页上写清</div>
-      <div class="tags"><span class="tag urgent">本周</span><span class="tag">短平快</span></div>
-    </div>
-    <div class="card">
-      <h3><a href="https://arcprize.org/competitions/2026/arc-agi-3" target="_blank" rel="noopener">ARC-AGI-3 Milestone #2</a></h3>
-      <div class="meta">开源里程碑截止约 <strong>2026-09-30</strong> · 最终提交约 11/2</div>
-      <div class="meta">总池可达约 <strong>$850,000</strong>（含条件奖金）· Kaggle / ARC</div>
-      <div class="tags"><span class="tag cash">大奖池</span><span class="tag">研究向</span></div>
+      <h3>ABB 机器人中国创新大赛</h3>
+      <div class="meta">方案约 <strong>9/27</strong> · 冠军约 <strong>$30,000</strong> 联合开发金 · 偏 C 轮前企业 · 决赛珠海</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag urgent">9/27</span></div>
     </div>
   </div>
 
-  <h2 id="overseas-oct">海外 · 10 月窗口</h2>
+  <h2 id="new-overseas">海外增量（9/21 下午）</h2>
   <div class="grid">
     <div class="card">
-      <h3><a href="https://competitions.mozilladatacollective.com/competitions/group/lost-in-transcription/" target="_blank" rel="noopener">Lost in Transcription</a></h3>
-      <div class="meta">约 <strong>2026-10-02</strong> 关 · 现金 <strong>$20,000</strong> · 多语 ASR</div>
+      <h3><a href="https://hackathon.emma.ms/" target="_blank" rel="noopener">emma Hackathon</a></h3>
+      <div class="meta">提交 <strong>2026-12-01</strong> · 真金 <strong>$50,000</strong> · 需申请 · 14 天内银行或加密打款</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">真现金</span></div>
     </div>
     <div class="card">
+      <h3><a href="https://hackathon.genai.works/event/open-agent-hackathon-2026" target="_blank" rel="noopener">Open Agent Hackathon 2026</a></h3>
+      <div class="meta"><strong>报名卡 10/13</strong> · 提交 10/20 · 最高约 <strong>$20,000</strong> · 全线上可 Solo</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag urgent">先报名</span><span class="tag cash">真现金</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://www.aicrowd.com/challenges/arc-white-box-estimation-challenge-2026" target="_blank" rel="noopener">ARC White-Box（AIcrowd）</a></h3>
+      <div class="meta">组队冻约 10/2 · Phase2 交到约 10/17 · Phase2 约 <strong>$100,000</strong> · 研究向</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">大奖池</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://www.synapse.org/Synapse:syn76251147/wiki/642892" target="_blank" rel="noopener">MVA / Sage 罕见病基因组黑客松</a></h3>
+      <div class="meta">交到约 10/24 · 真金 <strong>$25,000</strong>（另有 credits）· 数据合规门槛高</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">真现金</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge" target="_blank" rel="noopener">Lablab × AMD AI Academy</a></h3>
+      <div class="meta">到 <strong>12/1</strong> · 真金池 <strong>$5,000</strong> · 仅个人</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">真现金</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://www.kaggle.com/competitions/ai-4-s-open-innovation-artificial-intelligence-for-life-scien" target="_blank" rel="noopener">AI4S 生命科学（Kaggle）</a></h3>
+      <div class="meta">初赛约到 10/10 · 奖金 <strong>¥22,200（人民币）</strong> · 大陆收款友好</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">CNY</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://open-ryze.web.app/" target="_blank" rel="noopener">Ryze Small Models</a></h3>
+      <div class="meta">交到约 10/27 · <strong>$1,000</strong> 赢家通吃 · 端侧小模型</div>
+      <div class="tags"><span class="tag new">NEW</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon" target="_blank" rel="noopener">AssemblyAI Voice Agent</a></h3>
+      <div class="meta">至 <strong>9/30</strong> · 真现金 <strong>$5,000</strong> + credits</div>
+      <div class="tags"><span class="tag cash">半现金</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://lablab.ai/ai-hackathons/ibm-bob-2-hackathon" target="_blank" rel="noopener">IBM Bob 2.0</a></h3>
+      <div class="meta"><strong>9/25–27</strong> · 奖池约 <strong>$10,000</strong></div>
+      <div class="tags"><span class="tag urgent">本周</span></div>
+    </div>
+  </div>
+
+  <h2 id="new-china">国内增量（9/21 下午）</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="https://www.runninghub.cn/inspire" target="_blank" rel="noopener">RunningHub 全球 AIGC 长片赛</a></h3>
+      <div class="meta">先导片到 <strong>10/9</strong> · 总池约 <strong>550 万</strong>（现金约 350 万）· 须主要用平台工具</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">大池</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://app.pixverse.ai/challenge/pixlight" target="_blank" rel="noopener">PixLight 2026</a></h3>
+      <div class="meta">到 <strong>10/9 23:59 UTC</strong>（北京约 10/10 早）· 总池 <strong>$300,000</strong> · 纯线上</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag cash">真现金</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://tianchi.aliyun.com/competition/entrance/532514" target="_blank" rel="noopener">蚂蚁灵波具身大模型挑战赛</a></h3>
+      <div class="meta">线上初赛到约 <strong>10/26</strong> · 决赛 11 月上海 · 报道奖金档位以天池为准</div>
+      <div class="tags"><span class="tag new">NEW</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://sww.sh.gov.cn/swdt/20260902/1a649917821f4da8829ce83f52f31db1.html" target="_blank" rel="noopener">上海「人工智能＋消费」创新大赛</a></h3>
+      <div class="meta">材料到 <strong>9/30</strong> · 个人可报 · 奖金数字公开页未写死 · WTCC 展示约 10 月底</div>
+      <div class="tags"><span class="tag new">NEW</span><span class="tag urgent">9/30</span></div>
+    </div>
+    <div class="card">
+      <h3>「张江杯」青年 AIGC 视听创业赛</h3>
+      <div class="meta">征集多源写到 <strong>9/30</strong> · 宣传约 100 万现金 · <strong>官方报名直链未钉死</strong></div>
+      <div class="tags"><span class="tag new">NEW</span></div>
+    </div>
+    <div class="card">
+      <h3><a href="https://dreamkey.cn/nexora_ai_contest.html" target="_blank" rel="noopener">「未来之光」粤港澳 AI 影视赛</a></h3>
+      <div class="meta">到 <strong>10/8</strong> · 偏投资（单部约 10–300 万），非固定奖金</div>
+      <div class="tags"><span class="tag new">NEW</span></div>
+    </div>
+  </div>
+
+  <h2 id="overseas-oct">海外 · 10 月窗口（首版）</h2>
+  <div class="grid">
+    <div class="card">
       <h3><a href="https://hackapertus.devpost.com/" target="_blank" rel="noopener">Hack Apertus</a></h3>
-      <div class="meta"><strong>2026-10-01 ~ 10-16</strong> · 多轨 <strong>2,500 CHF</strong> 现金 · 开源 LLM</div>
+      <div class="meta"><strong>10/1–16</strong> · 多轨 <strong>2,500 CHF</strong></div>
     </div>
     <div class="card">
       <h3><a href="https://amazonappdev2026.devpost.com/" target="_blank" rel="noopener">Amazon Developer Hackathon</a></h3>
-      <div class="meta">至 <strong>2026-10-23</strong> · 现金 <strong>$138,000</strong>（另有 AWS credits 勿当现金）· 可个人</div>
+      <div class="meta">至 <strong>10/23</strong> · 现金 <strong>$138,000</strong></div>
     </div>
     <div class="card">
-      <h3><a href="https://opencv26.devpost.com/" target="_blank" rel="noopener">OpenCV AI Competition 2026</a></h3>
-      <div class="meta">至 <strong>2026-10-26</strong> · 展示额约 $20,250；真现金奖约 <strong>$12,000</strong> · 需 OpenCV + AWS</div>
+      <h3><a href="https://opencv26.devpost.com/" target="_blank" rel="noopener">OpenCV AI 2026</a></h3>
+      <div class="meta">至 <strong>10/26</strong> · 真现金约 <strong>$12,000</strong></div>
     </div>
     <div class="card">
-      <h3><a href="https://nebiusglobalaihackathon.devpost.com/" target="_blank" rel="noopener">Nebius × NVIDIA Global AI Hackathon</a></h3>
-      <div class="meta">至 <strong>2026-10-30</strong> · 现金 <strong>$50,000+</strong> · 大陆/HK 未点名排除</div>
+      <h3><a href="https://nebiusglobalaihackathon.devpost.com/" target="_blank" rel="noopener">Nebius × NVIDIA</a></h3>
+      <div class="meta">至 <strong>10/30</strong> · 现金 <strong>$50,000+</strong></div>
     </div>
     <div class="card">
-      <h3><a href="https://www.kaggle.com/competitions/rsna-knee-abnormality-detection" target="_blank" rel="noopener">RSNA Knee Abnormality Detection</a></h3>
-      <div class="meta">组队约 <strong>10/15</strong> · 提交约 <strong>10/22</strong> · 现金 <strong>$77,000</strong></div>
+      <h3><a href="https://www.kaggle.com/competitions/rsna-knee-abnormality-detection" target="_blank" rel="noopener">RSNA Knee</a></h3>
+      <div class="meta">组队约 10/15 · 提交约 10/22 · <strong>$77,000</strong></div>
     </div>
     <div class="card">
       <h3><a href="https://www.monad.xyz/developers/hackathons/metropolis" target="_blank" rel="noopener">Monad Metropolis</a></h3>
-      <div class="meta">至约 <strong>2026-10-13</strong> · 官方 <strong>$250,000+</strong> · 线上；杭州/深圳 lounge 可选 · 打款方式未公布（链上向，无钱包先备选）</div>
-    </div>
-    <div class="card">
-      <h3>Colosseum Crypto World's Fair</h3>
-      <div class="meta">至约 <strong>2026-10-12</strong> · 跨链线上 · 历史偏 USDC · 精确拆分未核 · 无钱包先备选</div>
+      <div class="meta">至约 10/13 · <strong>$250,000+</strong> · 偏链上兑付，无钱包先备选</div>
     </div>
   </div>
 
-  <h2 id="overseas-long">海外 · 中长期 / 研究向</h2>
+  <h2 id="overseas-long">海外 · 中长期</h2>
   <div class="grid">
     <div class="card">
-      <h3><a href="https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2" target="_blank" rel="noopener">ARC Prize 2026 · ARC-AGI-2</a></h3>
-      <div class="meta">报名约 10/26 · 提交约 <strong>11/02</strong> · 可达约 <strong>$700,000</strong></div>
-    </div>
-    <div class="card">
-      <h3><a href="https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3" target="_blank" rel="noopener">ARC Prize 2026 · ARC-AGI-3</a></h3>
-      <div class="meta">提交约 <strong>11/02</strong> · 可达约 <strong>$850,000</strong> · <a href="https://arcprize.org/competitions/2026" target="_blank" rel="noopener">总览</a></div>
+      <h3><a href="https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2" target="_blank" rel="noopener">ARC-AGI-2</a> / <a href="https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3" target="_blank" rel="noopener">ARC-AGI-3</a></h3>
+      <div class="meta">提交约 <strong>11/02</strong> · 可达约 $700k / $850k</div>
     </div>
     <div class="card">
       <h3><a href="https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/" target="_blank" rel="noopener">Enveda CASMI 2026</a></h3>
-      <div class="meta">报名约 12/07 · 提交约 <strong>12/14</strong> · 现金 <strong>$50,000</strong></div>
+      <div class="meta">约 12 月 · <strong>$50,000</strong></div>
     </div>
   </div>
 
-  <h2 id="china">国内 · 仍可报 / 即将截止</h2>
+  <h2 id="china">国内（首版仍开放）</h2>
   <div class="grid">
     <div class="card">
-      <h3><a href="https://delincapital.com.cn/delin-cup.html" target="_blank" rel="noopener">德邻杯 · 2026 AI 创业大赛</a></h3>
-      <div class="meta">交 BP 至 <strong>2026-09-30</strong> · 决赛 10/15–16 深圳</div>
-      <div class="meta">冠军宣传 <strong>200 万无条件现金</strong> · 未注册公司可报 · 需可演示 MVP · <strong>必须到深圳决赛</strong></div>
-      <div class="tags"><span class="tag urgent">9/30</span><span class="tag cash">真现金</span><span class="tag">一人公司友好</span></div>
+      <h3><a href="https://www.yrdaic.com/" target="_blank" rel="noopener">长三角 AI 应用场景赛 · OPC 组</a></h3>
+      <div class="meta">报名至 <strong>9/30</strong> · 一人公司组</div>
     </div>
     <div class="card">
-      <h3><a href="https://www.yrdaic.com/" target="_blank" rel="noopener">2026 长三角国际 AI 应用场景科创大赛</a></h3>
-      <div class="meta">报名至 <strong>2026-09-30</strong> · 专设 <strong>OPC 一人公司组</strong></div>
-      <div class="meta">奖金表公开页未写死 → 报前向组委会确认 · 决赛或需线下路演</div>
-      <div class="tags"><span class="tag">OPC 组</span></div>
+      <h3><a href="https://opc.book2048.com/" target="_blank" rel="noopener">怀柔 OPC · AI for Science</a></h3>
+      <div class="meta">揭榜约 10/10 · 黑客松约 11 月怀柔</div>
     </div>
     <div class="card">
-      <h3><a href="https://opc.book2048.com/" target="_blank" rel="noopener">怀柔科学城 · AI for Science OPC 创新挑战赛</a></h3>
-      <div class="meta">揭榜至约 <strong>10/10</strong>（揭榜通常 ≥2 人）· 黑客松约 11/15–16 怀柔现场（可单人）</div>
-      <div class="meta">揭榜一等约 10 万等 · 总悬赏宣传超 300 万</div>
-    </div>
-    <div class="card">
-      <h3><a href="https://jingrui-ai-competition.youku.com/" target="_blank" rel="noopener">鲸锐 AI 创作大赛</a></h3>
-      <div class="meta">征集至约 <strong>2026-11-22</strong> · 总池宣传 <strong>1000 万</strong> · 前 25 组需北京终评</div>
-      <div class="tags"><span class="tag">AIGC 视频</span><span class="tag cash">大池</span></div>
-    </div>
-    <div class="card">
-      <h3>「看见微光」可灵 AI · 公益影像大赛</h3>
-      <div class="meta">至约 <strong>2026-11-01</strong> · 最高约 10 万 · 线上投稿为主 · 入口以可灵/快手活动页为准</div>
-    </div>
-    <div class="card">
-      <h3><a href="https://www.aki.com.cn/szstory2026" target="_blank" rel="noopener">「这就是深圳」第 3 季 · AI 生成式赛道</a></h3>
-      <div class="meta">至 <strong>2026-12-06</strong> · 奖金不大但门槛低 · 个人可</div>
-    </div>
-    <div class="card">
-      <h3>2026 全国科算智药创新创业大赛</h3>
-      <div class="meta">报名至约 <strong>10/16</strong> · 现金池宣传超 100 万 · 核心成员 ≥3 · 决赛孝感 · <a href="https://docs.qq.com/form/page/DQ1hyTm1xT0daZFBv" target="_blank" rel="noopener">报名表</a></div>
+      <h3><a href="https://jingrui-ai-competition.youku.com/" target="_blank" rel="noopener">鲸锐 AI 创作赛</a></h3>
+      <div class="meta">征集至约 <strong>11/22</strong> · 总池宣传 1000 万</div>
     </div>
   </div>
 
-  <h2 id="startup">创业赛（全球 · 偏非稀释/现金口径）</h2>
+  <h2 id="startup">创业赛</h2>
   <div class="grid">
     <div class="card">
-      <h3><a href="https://entrepreneurshipworldcup.com/" target="_blank" rel="noopener">Entrepreneurship World Cup (EWC)</a></h3>
-      <div class="meta">宣传 <strong>$1M equity-free</strong> · 可线上申请 · 总决赛利雅得现场</div>
+      <h3><a href="https://entrepreneurshipworldcup.com/" target="_blank" rel="noopener">EWC</a></h3>
+      <div class="meta">宣传 $1M equity-free · 总决赛利雅得现场</div>
     </div>
     <div class="card">
-      <h3><a href="https://hello-tomorrow.org/global-challenge/" target="_blank" rel="noopener">Hello Tomorrow Global Challenge</a></h3>
-      <div class="meta">申到约 <strong>2026-11-30</strong> · 大奖偏 €200k <strong>投资</strong> · 要求 ≥2 人 · 决赛阿姆斯特丹</div>
+      <h3><a href="https://hello-tomorrow.org/global-challenge/" target="_blank" rel="noopener">Hello Tomorrow</a></h3>
+      <div class="meta">约至 11/30 · 偏投资 · 要 ≥2 人</div>
     </div>
     <div class="card">
-      <h3><a href="https://solve.mit.edu/" target="_blank" rel="noopener">MIT Solve Global Challenges</a></h3>
-      <div class="meta">约 9 月底开申 · 奖池宣传 +$1M · 偏社会创新 · 远程可申</div>
+      <h3><a href="https://solve.mit.edu/" target="_blank" rel="noopener">MIT Solve</a></h3>
+      <div class="meta">远程可申 · 奖池宣传 +$1M</div>
     </div>
   </div>
 
-  <h2 id="skip">别报 / 已关 / 不匹配</h2>
+  <h2 id="plan">建议行动顺序</h2>
+  <ol>
+    <li>今晚：Convex 若能交就冲，否则放弃；Kaggle Join Biohub / Kaggriculture</li>
+    <li>本周：Open Agent <strong>先报名</strong>；ABB（约 9/27）；德邻杯 / 上海 AI+消费 / 长三角 OPC（9/30）</li>
+    <li>高奖金线上：emma 申请、RunningHub、PixLight、Nebius / Amazon / OpenCV</li>
+    <li>研究向：ARC White-Box / ARC-AGI；人民币友好看 AI4S</li>
+  </ol>
+
+  <h2 id="skip">别报 / 已关</h2>
   <table>
     <thead><tr><th>名称</th><th>原因</th></tr></thead>
     <tbody>
       <tr><td>GEMS Prize</td><td>仅限美国公民/绿卡</td></tr>
-      <tr><td>AWS CDS Partner Hackathon</td><td>仅限 AWS Partner</td></tr>
-      <tr><td>Agents for Humans / CALL-E / DaT Parkinson's / ETHOnline</td><td>已截止</td></tr>
-      <tr><td>天猫 AI 黑客松 / 腾讯公益视频赛 / 讯飞星火杯 / C4-AI</td><td>限在校生</td></tr>
-      <tr><td>创客中国本届主窗口 / GAIIEC2026 海选</td><td>报名窗口已过</td></tr>
-      <tr><td>纯 USDC / 链上发奖且无钱包</td><td>当前收款链路不通，先备选</td></tr>
+      <tr><td>AWS CDS Partner</td><td>仅限 AWS Partner</td></tr>
+      <tr><td>Agents for Humans / CALL-E / DaT / ETHOnline</td><td>已截止</td></tr>
+      <tr><td>天猫/腾讯公益/星火杯等</td><td>限在校生</td></tr>
+      <tr><td>纯 USDC 且无钱包</td><td>收款链路不通，先备选</td></tr>
     </tbody>
   </table>
 
-  <h2>本周行动顺序（按你的画像）</h2>
-  <ol>
-    <li>Kaggle：Join <strong>Biohub</strong> + <strong>Kaggriculture</strong>（报名窗口只剩 1–2 天）</li>
-    <li>有可演示产品：冲 <strong>德邻杯</strong>（BP 到 9/30）</li>
-    <li>有 App 能上架：<strong>Shipaton</strong>；否则主攻 Nebius / Amazon / OpenCV</li>
-    <li>创业叙事：EWC / MIT Solve；Hello Tomorrow 凑齐 ≥2 人再申</li>
-  </ol>
-
   <footer>
-    由「海外比赛项目挖掘大师」根据 2026-09-21 调研汇编 · 官方页变更时以官方为准 ·
-    仓库：<a href="https://github.com/Eliyandot/ai-cash-contests-2026" target="_blank" rel="noopener">Eliyandot/ai-cash-contests-2026</a>
+    海外比赛项目挖掘大师 · 2026-09-21 v2 · 以官方页为准 ·
+    <a href="https://github.com/Qidianyan/Qidianyan/tree/main/ai-cash-contests" target="_blank" rel="noopener">仓库目录</a>
   </footer>
 </div>
 </body>
